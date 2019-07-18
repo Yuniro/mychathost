@@ -3,6 +3,31 @@
 <html>
 <head>
 <title>Регистрация</title>
+   <style>
+        .card {
+        display:flex;
+        justify-content: flex-end;
+    }
+
+    .fone {
+    background: linear-gradient(90deg, red, green, blue);
+    width: 330px;
+    height:130px;
+    }
+    
+    #title {
+        display:flex;
+        justify-content: center;
+        color: white;
+        text-transform: uppercase;
+    }
+    #about {
+        padding-top: 3px;
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+</style>
 </head>
 <body>
 <?php
@@ -50,5 +75,14 @@ if(isset($_POST['submit'])) {
     <p><button type="submit" name="submit">Регистрация</button></p>
     <p><a href="login.php">Уже зарегистрированы?</a></p>
     </form>
+    <div class="card">
+        <div class="fone">
+                <div id="title">Bussines card</div>
+                <div id="about">Sergey Ryzhak</div>
+                <div id="about">30/11/1997</div>
+                <div id="about">keya9711@gmail.com</div>
+                <div id="about">About self: I'm am student, fond of computer games, programming,movies.</div>
+            </div>
+        </div>
 </body>
 </html>
